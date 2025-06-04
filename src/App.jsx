@@ -5,11 +5,12 @@ import Navbar from './components/Navbar';
 import SocialButtons from './components/SocialButtons';
 import Footer from './components/Footer'; // ✅ import footer
 import Home from './pages/Home';
+import Donasi from './pages/Donasi';
 
 export default function App() {
   useEffect(() => {
     const options = { autoConfig: true, debug: false };
-    ReactPixel.init('YOUR_PIXEL_ID', undefined, options);
+    ReactPixel.init('123456789012345'); // Ganti dengan ID asli kamu dari Meta Business
     ReactPixel.pageView();
   }, []);
 
@@ -21,6 +22,7 @@ export default function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/donasi" element={<Donasi />} />
           </Routes>
         </div>
 

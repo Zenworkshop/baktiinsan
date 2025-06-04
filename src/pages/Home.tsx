@@ -7,6 +7,7 @@ import Count from '../components/Count';
 import News from '../components/News';
 import Catalog from '../components/Catalog';
 import Cta from '../components/Cta';
+import Category from '../components/Category';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <Count/>
       <News/>
+       <Category/>
       <Catalog/>
       <Cta/>
     </div>
